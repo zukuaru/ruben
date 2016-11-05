@@ -19,7 +19,7 @@ public class MiUi extends UI{
     protected void init(VaadinRequest request) {
         VerticalLayout layout = new VerticalLayout();
 
-        Label label = new Label("Aplicacion inccvccicial");
+        Label label = new Label("Aplicacion inicial");
         Button boton=new Button("UMF mas negadas");
         boton.addStyleName(ValoTheme.BUTTON_PRIMARY);
 
