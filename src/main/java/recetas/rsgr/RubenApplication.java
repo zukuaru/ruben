@@ -28,7 +28,7 @@ public class RubenApplication {
            // NPOIFSFileSystem fs = new NPOIFSFileSystem(new File("C:\\Users\\zukua\\Documents\\uno.xlsx"));
 
 
-            Workbook wb = WorkbookFactory.create(new FileInputStream("C:\\Users\\zukua\\Documents\\uno.xlsx"));
+            Workbook wb = WorkbookFactory.create(new FileInputStream("C:\\Users\\zukua\\Documents\\uno.xls"));
 
 
          Sheet s1= wb.getSheetAt(0);
