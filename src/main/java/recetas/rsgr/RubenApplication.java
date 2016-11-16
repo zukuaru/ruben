@@ -7,6 +7,7 @@ import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.poifs.filesystem.NPOIFSFileSystem;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -32,14 +33,17 @@ public class RubenApplication {
 
 
 
-              //  fileIn = new FileInputStream("C:\\Users\\zukua\\Documents\\uno.xlsx");
-            OPCPackage pkg = OPCPackage.open("C:\\Users\\zukua\\Documents\\uno.xlsx");
-            XSSFWorkbook wb = new XSSFWorkbook("C:\\Users\\zukua\\Documents\\uno.xlsx");
+               fileIn = new FileInputStream("/home/campitos/uno.xlsx");
+           // OPCPackage pkg = OPCPackage.open("C:\\Users\\zukua\\Documents\\uno.xlsx");
+            XSSFWorkbook wb = new XSSFWorkbook(fileIn);
            // XSSFWorkbook wb = new XSSFWorkbook(fileIn);
             XSSFSheet sheet = wb.getSheetAt(0);
-            XSSFRow row = sheet.getRow(2);
+            XSSFRow row = sheet.getRow(5);
+            XSSFCell celda= row.getCell(1);
+          String valor=  celda.getStringCellValue();
 
-                System.out.println("Bien");
+
+                System.out.println("Bien   "+valor);
 
         }catch(Exception e){
 System.out.println("mal "+e.getMessage());

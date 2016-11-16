@@ -31,11 +31,20 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-devtools')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('com.vaadin:vaadin-spring-boot-starter:1.0.2')
-	compile group: 'org.apache.poi', name: 'poi', version: '3.15'
+	compile group: 'org.apache.poi', name: 'poi', version: '3.13'
 	//compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.8-beta4'
 	// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
-	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
-	compile group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '3.9'
+	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.13'
+	compile group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '3.13'
+	// https://mvnrepository.com/artifact/commons-codec/commons-codec
+	compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    // https://mvnrepository.com/artifact/stax/stax-api
+    compile group: 'stax', name: 'stax-api', version: '1.0.1'
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad
+    compile group: 'org.apache.poi', name: 'poi-scratchpad', version: '3.13'
+
+
+
 // https://mvnrepository.com/artifact/dom4j/dom4j
 	compile group: 'dom4j', name: 'dom4j', version: '1.6.1'
 
