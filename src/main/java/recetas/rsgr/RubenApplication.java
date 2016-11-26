@@ -39,7 +39,7 @@ public class RubenApplication {
            // XSSFWorkbook wb = new XSSFWorkbook(fileIn);
             XSSFSheet sheet = wb.getSheetAt(0);
             XSSFRow row = sheet.getRow(5);
-            XSSFCell celda= row.getCell(1);
+            XSSFCell celda= row.getCell(0);
           String valor=  celda.getStringCellValue();
 
 
