@@ -33,13 +33,13 @@ public class RubenApplication {
 
 
 
-               fileIn = new FileInputStream("/home/campitos/uno.xlsx");
+               fileIn = new FileInputStream("C:\\Users\\zukua\\Documents\\uno.xlsx");
            // OPCPackage pkg = OPCPackage.open("C:\\Users\\zukua\\Documents\\uno.xlsx");
             XSSFWorkbook wb = new XSSFWorkbook(fileIn);
            // XSSFWorkbook wb = new XSSFWorkbook(fileIn);
             XSSFSheet sheet = wb.getSheetAt(0);
             XSSFRow row = sheet.getRow(5);
-            XSSFCell celda= row.getCell(0);
+            XSSFCell celda= row.getCell(6);
           String valor=  celda.getStringCellValue();
 
 
